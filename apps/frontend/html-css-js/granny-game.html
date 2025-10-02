@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Granny's Room Game</title>
+    <style>
+        /* Page styling with background */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('images/spooky_room.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Key styling */
+        #key {
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            cursor: pointer;
+            width: 50px;
+        }
+
+        /* Granny styling */
+        #granny {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            width: 300px;
+            height: 500px;
+            cursor: pointer;
+        }
+
+        /* Inventory box */
+        #inventory {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Heading color */
+        #heading {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Game heading -->
+    <h1 id="heading">Granny's Room Game</h1>
+
+    <!-- Inventory display -->
+    <div id="inventory">Inventory: </div>
+
+    <!-- Key image -->
+    <img src="images/key.jpeg" id="key" alt="Key">
+
+    <!-- Granny image -->
+    <img src="images/granny.jpeg" id="granny" alt="Granny">
+</body>
+
+</html>

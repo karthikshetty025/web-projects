@@ -60,12 +60,31 @@
 
     <!-- Inventory display -->
     <div id="inventory">Inventory: </div>
-
+    
     <!-- Key image -->
     <img src="images/key.jpeg" id="key" alt="Key">
 
     <!-- Granny image -->
     <img src="images/granny.jpeg" id="granny" alt="Granny">
+
+    <script>
+        const key = document.getElementById('key');
+        const granny = document.getElementById('granny');
+        const inventory = document.getElementById('inventory');
+
+        // Move key to inventory on click
+        key.addEventListener('click', () => {
+            inventory.appendChild(key); // moves the <img> inside inventory div
+            key.style.position = 'static';
+            key.style.width = '50px';
+        });
+
+        // Show game over message on Granny click
+        granny.addEventListener('click', () => {
+            alert('Game Over!');
+        });
+    </script>
+
 </body>
 
 </html>

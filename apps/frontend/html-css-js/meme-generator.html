@@ -49,11 +49,13 @@
             top: 10px;
             left: 50%;
             transform: translateX(-50%);
-            color: white;
+            color: black;
             font-size: 24px;
             font-weight: bold;
-            text-shadow: 2px 2px 4px black;
             pointer-events: none;
+            width: 90%;
+            word-wrap: break-word;
+            text-align: center;
         }
     </style>
 </head>
@@ -72,6 +74,15 @@
             <div id="meme-text"></div>
         </div>
     </div>
+    <!-- JavaScript: to add the text from the user input -->
+    <script>
+        const textInput = document.getElementById('text-input');
+        const memeText = document.getElementById('meme-text');
+
+        textInput.addEventListener('input', () => {
+            memeText.textContent = textInput.value;
+        });
+    </script>
 </body>
 
 

@@ -4,23 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spider-Man Card</title>
+    <!-- Tailwind CSS CDN for utility-first styling -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-red-700 to-black p-6">
+    
+    <!-- Card container with semi-transparent background, blur effect, rounded corners, and shadow -->
     <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-6 max-w-sm text-center border border-white/20">
+      
+      <!-- Spider-Man profile image, circular, with red border and shadow -->
       <img
         src="images/spiderman-image.jpg"
         alt="Spider-Man"
         class="w-32 h-32 rounded-full mx-auto border-4 border-red-600 shadow-lg"
       />
+      
+      <!-- Name heading -->
       <h1 class="text-2xl font-bold text-white mt-4">Spider-Man</h1>
+      
+      <!-- Quote in italic with red color -->
       <p class="text-red-300 italic text-sm">“With great power comes great responsibility.”</p>
+      
+      <!-- Short bio / description of Spider-Man -->
       <p class="text-gray-200 text-sm mt-3">
         Peter Parker, a young man bitten by a radioactive spider, gains superhuman abilities and becomes
         the friendly neighborhood Spider-Man who protects New York City.
       </p>
+      
     </div>
   </body>
-  
-  
 </html>

@@ -17,7 +17,7 @@ const MovieCard: React.FC<Props> = ({ movie }) => {
       <p className="text-gray-300">Genre: {movie.genre}</p>
 
       {/* Movie rating */}
-      <p className="text-yellow-400">Rating: {movie.rating}/10</p>
+      <p className="text-yellow-600">Rating: {movie.rating}/10</p>
     </div>
   );
 };

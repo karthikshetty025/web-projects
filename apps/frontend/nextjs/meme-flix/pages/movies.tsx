@@ -1,4 +1,12 @@
 import React from 'react';
+import { Movie } from "../types/types";
+
+// Sample movie data array
+const movies: Movie[] = [
+    { title: "Spider-Man: No Way Home", genre: "Action", rating: 9 },
+    { title: "The Conjuring", genre: "Horror", rating: 8 },
+    { title: "Inception", genre: "Sci-Fi", rating: 9 },
+  ];
 
 const MoviesPage: React.FC = () => {
   return (

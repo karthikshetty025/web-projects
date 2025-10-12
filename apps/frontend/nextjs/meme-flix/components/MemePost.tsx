@@ -9,8 +9,7 @@ interface Props {
 const MemePost: React.FC<Props> = ({ meme }) => {
     const [likes,setLikes]=useState(meme.upvotes);
   return (
-    <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-md p-4 m-4 w-80 hover:scale-105 transition-transform duration-300">
-      {/* Meme image */}
+    <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-md p-4 m-4 w-80 hover:scale-105 transition-transform duration-300 flex flex-col justify-between h-[450px]">
       <img
         src={meme.imageUrl}
         alt={meme.title}
@@ -21,7 +20,9 @@ const MemePost: React.FC<Props> = ({ meme }) => {
       <h2 className="text-xl font-bold text-white mb-1">{meme.title}</h2>
 
       {/* Display number of likes */}
+      <div className="flex items-center justify-between mt-auto">
       <p className="text-yellow-400">Likes: {likes}</p>
+      </div>
 
       {/* Like button */}
       <button

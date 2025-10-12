@@ -74,3 +74,52 @@ Understand how to create reusable components and pass data using props in React.
 * Learned mapping and passing props for multiple elements
 * Tailwind CSS applied for visual consistency and card styling
 * Maintained clean folder structure and modular code
+
+# Phase 1 - Step 5: React State & Event Handling Exercises
+
+## Task
+
+Learn to manage component state using `useState` and handle user events in React.
+
+## Exercise 1 – MemePost Component: Like Button
+
+* Updated `MemePost` component to include a **Like** button.
+* Used `useState` to track number of likes.
+* Clicking the button increments the like count in real time.
+* Styled the button and like count using Tailwind CSS.
+* Ensured all cards have equal height and like button aligned across cards.
+
+**Learning / Notes:**
+
+* Practiced `useState` for dynamic state management.
+* Learned handling button click events.
+* Managed layout with `flex` and fixed card height to align elements.
+
+
+## Exercise 2 – MovieCard Component: Add to Watchlist
+
+* Updated `MovieCard` component to include an **Add to Watchlist** button.
+* Used `useState` to track if a movie has been added.
+* Button text changes to “Added!” and disables after clicking.
+* Styled the button with Tailwind CSS for hover and disabled states.
+* Buttons aligned at bottom of cards for consistent UI.
+
+**Learning / Notes:**
+
+* Practiced managing component-level state with `useState`.
+* Learned conditional rendering and button disabling.
+* Used flex layout to keep buttons aligned at the bottom of all cards.
+
+
+
+## Exercise 3 – Update Pages to Include Interactivity
+
+* Updated `/pages/index.tsx` to render interactive `MemePost` components.
+* Updated `/pages/movies.tsx` to render interactive `MovieCard` components.
+* Verified that like counts and watchlist buttons work independently for each card.
+
+**Learning / Notes:**
+
+* Practiced passing props to child components.
+* Ensured reusability of components with dynamic state.
+* Learned combining stateful components with page-level rendering in Next.js.
